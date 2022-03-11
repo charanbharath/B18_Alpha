@@ -1,0 +1,66 @@
+<header>
+  <div class ="container-fluid mt-3 ">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+          <div class="book">
+    <fa-icon [icon]="Bookmark"></fa-icon>
+   <button routerLink="/books" type="button" class="btn" >Book Cart</button>
+     </div>
+    </div>
+<div class="col-md-4 col-sm-4 col-4 ">
+  
+  <div class="searchbar">
+    <mat-form-field class="formfield" appearance="fill">
+      <input matInput type="search" [matAutocomplete]="auto" class="searchbox"  placeholder="Search books or authors"
+        [(ngModel)]="searchTerm" (ngModelChange)="search($event)">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of all_book_list | async" [value]="option.title">
+          {{option.title}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+</div>
+
+</div>
+
+ <div class="col-md-5 col-sm-5 col-5 ">
+ 
+    <span class="wishlist">
+       <button routerLink="wishlist"type="button" class="btn" > <fa-icon [icon]="Wishlist"></fa-icon>
+        <span style="font-size:10px;" class="badge bg-danger">{{totalItem2}}</span>
+      </button>
+       
+     </span>
+     <span class="cart">
+       <button routerLink="cart" type="button" class="btn" > <fa-icon [icon]="Cart"></fa-icon>
+        <span style="font-size:10px;" class="badge bg-danger">{{totalItem}}</span>
+      </button>
+     </span>
+      <span class="user">
+     <button mat-button [matMenuTriggerFor]="menu"  routerLink ="userlogin"class="matbutton"><fa-icon [icon]="User" ></fa-icon>UserLogin
+      {{loginUserData}}
+    </button>
+     <mat-menu #menu="matMenu">
+     <button mat-menu-item  routerLink ="myorders">My Orders</button>
+     <button mat-menu-item routerLink ="logout">Logout</button>
+   </mat-menu>
+  </span>
+
+  <span class="theme">
+    <button type="button" class="btn" > <fa-icon [icon]="Theme"></fa-icon>
+     
+   </button>
+
+   <img class="swagger" src="/assets/image/swagger_fav.png">
+   <button class="apiname">Swagger</button>
+   <img class="gitimage" src="/assets/image/GitHub-Mark.png">
+   <button class="gitname" >GitHub</button>
+
+    
+  </span>
+  </div>
+  </div>
+    </div>
+  
+</header>

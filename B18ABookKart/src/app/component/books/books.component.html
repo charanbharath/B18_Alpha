@@ -1,0 +1,8 @@
+
+ <ng-container *ngFor="let item of bookList | filter:searchKey:'title'">
+    <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"><h2>{{item.title}}</h2></h5>
+    
+    
+     <button class="btn btn-primary" (click)=addtoCart(item)>Add to cart</button><br><br>
+     <button class="btn btn-primary" (click)=addtoWishList(item)>Add to wishlist</button>
+ </ng-container>

@@ -1,0 +1,111 @@
+.row {
+  color: #fff;
+  background-color:#3f51b5;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  border-radius: 2px;
+  box-shadow: inset;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.btn {
+  color: white ;
+  font-size: x-large;
+  padding: 0 5px 0 5px;
+
+}
+
+.searchbox {
+  border: none;
+  border-radius: 2px;
+  background-color: #fafafa;
+  padding: 7px 5px;
+  height: 100%;
+  color: black;
+  overflow: none;
+  font-size: larger;
+}
+
+.formfield{
+  width: 300px;
+}
+.input{
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.wishlist {
+  padding: 10px;
+}
+.cart {
+  padding: 10px;
+}
+
+.matbutton {
+  width:150px;
+  background-color:#3f51b5 ;
+  color:white;
+  font-size: larger;
+  border:none;
+  }
+
+.swagger{
+
+  padding: 10px 0 10px 10px;
+}
+
+.apiname {
+  font-size:large;
+  padding-right: 10px 10px 10px 0px;
+  background-color:#3f51b5 ;
+  color:white;
+  font-size: larger;
+  border:none;
+}
+.gitname{
+  font-size:large;
+  padding: 10px;
+  background-color:#3f51b5 ;
+  color:white;
+  font-size: larger;
+  border:none;
+  margin-left: 0;
+}
+
+.gitimage{
+  width: 30px;
+  border-radius: 40px;
+
+
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
